@@ -1,7 +1,7 @@
 import { DECREASE_COUNTER, INCREASE_COUNTER, RESET } from "../types/counterTypes";
 
 const initialState = {
-  counter: 10,
+  counter: 0,
 };
 const counterReducer = (state = initialState, action) => {
   switch (action.type) {

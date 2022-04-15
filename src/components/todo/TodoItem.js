@@ -45,7 +45,7 @@ e.preventDefault()
         <span>
           <img
             src={updateLogo}
-            className="ok-logo"
+            className="logo"
             alt="ok logo"
             onClick={handleUpdate}
           />
@@ -53,7 +53,7 @@ e.preventDefault()
         <span>
           <img
             src={okLogo}
-            className="ok-logo"
+            className="logo"
             alt="ok logo"
             onClick={handleToggle}
           />
@@ -61,7 +61,7 @@ e.preventDefault()
         <span>
           <img
             src={deleteLogo}
-            className="delete-logo"
+            className="logo"
             alt="delete logo"
             onClick={handleDelete}
           />
