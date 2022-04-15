@@ -3,6 +3,7 @@ import {
   CLEAR_TODO_LIST,
   DELETE_TODO,
   TOGGLE_TODO,
+  UPDATE_TODO,
 } from "../types/todoTypes";
 
 const initialState = {
@@ -37,6 +38,15 @@ const todoReducer = (state = initialState, action) => {
         list: state.list.map((todo) =>
           todo.id === action.payload
             ? { ...todo, completed: !todo.completed }
+            : todo
+        ),
+      };
+    case UPDATE_TODO:
+      return {
+        ...state,
+        list: state.list.map((todo) =>
+          todo.id === action.payload.id
+            ? { ...todo, text: action.payload.text }
             : todo
         ),
       };

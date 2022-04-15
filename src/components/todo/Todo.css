@@ -2,6 +2,21 @@
   padding: 10px;
   font-size: 1rem;
 }
+.todo-update{
+  width: 100%;
+  display: flex;
+}
+.update-btn{
+  padding: 10px;
+  font-size: 1rem;
+  background-color: yellow;
+  color: black;
+}
+.update-input{
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
 
 .add-button {
   padding: 10px;
